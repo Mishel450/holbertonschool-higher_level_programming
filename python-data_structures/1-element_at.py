@@ -6,3 +6,5 @@ def element_at(my_list, idx):
             if (count == idx):
                 return (my_list[i])
             count = count + 1
+    else:
+        return (None)
