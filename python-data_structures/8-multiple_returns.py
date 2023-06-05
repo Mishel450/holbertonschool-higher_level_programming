@@ -5,4 +5,4 @@ def multiple_returns(sentence):
         fchr = sentence[0]
         return (size, fchr)
     else:
-        return (0, None)
+        return (None, None)
