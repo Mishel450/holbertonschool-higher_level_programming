@@ -7,6 +7,6 @@ def element_at(my_list, idx):
                 return (my_list[i])
             count = count + 1
             if (count == len(my_list)):
-                return (None)
+                return ("None")
     else:
-        return (None)
+        return ("None")
