@@ -9,4 +9,4 @@ class Square:
     Square
     """
     pass
-    __size = None
+    _size = None
