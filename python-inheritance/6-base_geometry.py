@@ -7,5 +7,4 @@ class BaseGeometry:
     pass
 
     def area(self):
-        if isinstance (self == None):
-            raise Exception("area() is not implemented")
+        raise Exception("area() is not implemented")
