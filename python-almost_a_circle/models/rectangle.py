@@ -6,6 +6,15 @@ from models.base import Base
 class Rectangle(Base):
     """python3 -c 'print(__import__("my_module").MyClass.__doc__)'"""
 
+    def __init__(self, width, height, x=0, y=0, id=None):
+
+        bs = Base(id)
+        self.id = bs.id
+        self.__width = width
+        self.__height = height
+        self.__x = x
+        self.__y = y
+
     @property
     def width(self):
         return self.width
@@ -38,11 +47,3 @@ class Rectangle(Base):
     def y(self, value):
         self.__y = value
 
-    def __init__(self, width, height, x=0, y=0, id=None):
-
-        bs = Base(id)
-        self.id = bs.id
-        self.__width = width
-        self.__height = height
-        self.__x = x
-        self.__y = y
