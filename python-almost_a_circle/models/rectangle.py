@@ -1,11 +1,10 @@
 #!/usr/bin/python3
-from models.base import Base
 """2-task"""
+from models.base import Base
 
 
 class Rectangle(Base):
     """python3 -c 'print(__import__("my_module").MyClass.__doc__)'"""
-
     def __init__(self, width, height, x=0, y=0, id=None):
         self.width = width
         self.height = height
