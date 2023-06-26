@@ -7,12 +7,11 @@ class Rectangle(Base):
     """python3 -c 'print(__import__("my_module").MyClass.__doc__)'"""
 
     def __init__(self, width, height, x=0, y=0, id=None):
-
-        super().__init__(id)
         self.width = width
         self.height = height
         self.x = x
         self.y = y
+        super().__init__(id)
 
     @property
     def width(self):
