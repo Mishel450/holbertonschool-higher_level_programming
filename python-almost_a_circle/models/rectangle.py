@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-"""2-task"""
 from models.base import Base
+"""2-task"""
 
 
 class Rectangle(Base):
