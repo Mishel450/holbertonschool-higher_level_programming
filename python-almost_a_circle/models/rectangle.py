@@ -79,6 +79,7 @@ class Rectangle(Base):
                 (self.id, self.x, self.y, self.width, self.height))
 
     def update(self, *args):
+        """update functions"""
         self.id = args[0]
         self.__width = args[1]
         self.__height= args[2]
