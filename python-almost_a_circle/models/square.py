@@ -43,3 +43,10 @@ class Square(Rectangle):
                     self.x = value
                 if key == "y":
                     self.y = value
+
+    def to_dictionary(self):
+        d1 = dict(x=self.__x,
+                  id=self.id,
+                  size=self.__height,
+                  y=self.__y)
+        return (d1)
