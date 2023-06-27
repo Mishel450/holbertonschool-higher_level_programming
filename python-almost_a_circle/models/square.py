@@ -26,7 +26,8 @@ class Square(Rectangle):
             if len(args) >= 1:
                 self.id = args[0]
             if len(args) >= 2:
-                self.size = args[1]
+                self.height = args[1]
+                self.width = args[1]
             if len(args) >= 3:
                 self.x = args[2]
             if len(args) >= 4:
@@ -36,7 +37,8 @@ class Square(Rectangle):
                 if key == "id":
                     self.id = value
                 if key == "size":
-                    self.size = value
+                    self.width = value
+                    self.height = value
                 if key == "x":
                     self.x = value
                 if key == "y":
