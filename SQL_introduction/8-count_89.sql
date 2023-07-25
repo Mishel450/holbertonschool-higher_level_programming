@@ -1,3 +1,3 @@
 -- task-8
 
-SELECT COUNT(id = 89) FROM first_table;
+SELECT COUNT(*) FROM first_table where id = 89;
