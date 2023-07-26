@@ -1,4 +1,4 @@
 -- task-0
 
-GRANT CREATE, ALTER, DROP, INSERT, UPDATE, DELETE, SELECT, REFERENCES, RELOAD on *.* TO 'user_0d_1'@'localhost' WITH GRANT OPTION;
-GRANT CREATE, ALTER, DROP, INSERT, UPDATE, DELETE, SELECT, REFERENCES, RELOAD on *.* TO 'user_0d_2'@'localhost' WITH GRANT OPTION;
+GRANT ALL on *.* TO 'user_0d_1'@'localhost';
+GRANT ALL on *.* TO 'user_0d_2'@'localhost';
