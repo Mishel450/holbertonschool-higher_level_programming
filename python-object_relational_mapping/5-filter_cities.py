@@ -19,7 +19,7 @@ if __name__ == "__main__":
             my_list.append(i[1])
     for i in range(len(my_list)):
         if i == len(my_list) - 1:
-            print (my_list[i], end="")
+            print(my_list[i], end="")
         else:
             print(my_list[i], end=", ")
     print()
