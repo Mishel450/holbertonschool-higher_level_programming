@@ -5,6 +5,7 @@ from sys import argv
 
 
 if __name__ == "__main__":
+    txt = "{}"
     db_conection = MySQLdb.connect(host='localhost', database=argv[3],
                                    user=argv[1], password=argv[2])
     cursor = db_conection.cursor()
@@ -12,5 +13,5 @@ if __name__ == "__main__":
     cursor.execute(mySql_select_states)
     for i in cursor.fetchall():
         if i[1] == argv[4]:
-            print(i)
+            print(txt.format(i))
     db_conection.close()
