@@ -10,7 +10,7 @@ if __name__ == "__main__":
     cursor = db_conection.cursor()
 
     cursor.execute("SELECT * FROM cities ORDER BY id ASC")
-    
+
     for i in cursor.fetchall():
         print(i)
     db_conection.close()
