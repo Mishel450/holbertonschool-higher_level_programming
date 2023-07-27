@@ -11,7 +11,8 @@ if __name__ == "__main__":
     cursor = db_conection.cursor()
     mySql_select_states = "SELECT * FROM states ORDER BY id ASC"
     cursor.execute(mySql_select_states)
+    querty = argv[4]
     for i in cursor.fetchall():
-        if i[1] == argv[4]:
+        if i[1] == querty:
             print(txt.format(i))
     db_conection.close()
