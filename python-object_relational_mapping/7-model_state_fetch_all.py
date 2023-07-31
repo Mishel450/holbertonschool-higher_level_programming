@@ -11,7 +11,7 @@ if __name__ == "__main__":
 
     connect = engine.connect()
     states = sqlalchemy.select(State.id, State.name).order_by(State.id)
-    res = connect.execute(states).fetchall
+    res = connect.execute(states).fetchall()
 
     for states in res:
         print("{}: {}".format(states[0], states[1]))
