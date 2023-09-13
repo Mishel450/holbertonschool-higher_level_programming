@@ -48,6 +48,6 @@ class Square(Rectangle):
         """dict function"""
         d1 = dict(x=self.__x,
                   id=self.id,
-                  size=self.__height,
+                  size=self.__width,
                   y=self.__y)
         return (d1)
